@@ -14,7 +14,7 @@ const useOpenAi = () => {
         try {
             console.log("Requesting AI response...");
             const response = await axios.post(
-                "http://localhost:3000/api/chat",
+                "https://zlatan-chatbot-1openai-api-key-sk-proj.onrender.com/api/chat",
                 {
                     messages: messages.map(msg => ({
                         role: msg.sender === "You" ? "user" : "assistant",
